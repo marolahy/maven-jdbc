@@ -7,7 +7,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 public class IntroJDBC01 {
-
+	final static String insert = "INSERT INTO PRODUITS(ID, NOM, CATEGORIE, PRIX, DESCRIPTION) VALUES (?, ?, ?, ?, ?)";
+	final static String delete = "DELETE FROM PRODUITS";
+	final static String select = "SELECT ID, NOM, CATEGORIE, PRIX, DESCRIPTION FROM PRODUITS";
+	final static String update = "UPDATE PRODUITS SET PRIX=PRIX*1.1 WHERE CATEGORIE=?";
+	final static String insert2 = "INSERT INTO PRODUITS(ID, NOM, CATEGORIE, PRIX, DESCRIPTION) VALUES (100,'X',1,1,'x')";
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {
@@ -43,6 +47,21 @@ public class IntroJDBC01 {
 	    	}
 	    }
 
+	}
+	private static void delete() {
+		
+	}
+	private static void insert() {
+		
+	}
+	private static void update() {
+		
+	}
+	private static void insert2() {
+		
+	}
+	private static void select() {
+		
 	}
 
 }
