@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: introjdbc
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Cnaps
+Implementation-Vendor-Id: ista.st.jdbc
+Build-Jdk: 1.8.0_144
+Implementation-URL: http://projects.spring.io/spring-boot/introjdbc/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
