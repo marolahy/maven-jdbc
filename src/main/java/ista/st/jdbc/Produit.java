@@ -1,5 +1,6 @@
 package ista.st.jdbc;
-
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 public class Produit {
 	private int id;
 	private int categorie;
@@ -54,6 +55,11 @@ public class Produit {
 	}
 
 	public String toString() {
-		return String.format("[id=%s, categorie=%s, description=%s, nom=%s,  prix=%f]", id, categorie, description,nom, prix);
+		try {
+			return new ObjectMapper().writeValueAsString(this);
+		}catch (JsonProcessingException e) {
+			e.printStackTrace();
+			return null;
+		}
 	}
 }
